@@ -1,0 +1,154 @@
+/* =========================================================
+   HOME PAGE CONTAINER
+========================================================= */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #0d0d10;
+  border-radius: 10px;
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  color: #fff;
+}
+
+/* =========================================================
+   HERO SECTION
+   Main heading, subheading, and CTA button
+========================================================= */
+.hero-section {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.main-heading {
+  font-size: 4rem;
+  font-weight: 600;
+  letter-spacing: 10px;
+}
+
+.highlight {
+  color: #fef13d;
+  font-weight: 400;
+}
+
+.subheading {
+  font-size: 1.5rem;
+  opacity: 0.7;
+  margin: 1rem 0 2.5rem 0;
+  /* Gradient text effect */
+  background: linear-gradient(90deg, #fef13d, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.cta-button {
+  background: transparent;
+  color: #fef13d;
+  border: 2px solid #fef13d;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  transition: 0.3s ease;
+}
+
+.cta-button:hover {
+  background: rgb(255, 236, 23);
+  color: #0d0d10;
+  transform: translateY(-2px);
+  border-color: inherit;
+}
+
+/* =========================================================
+   DIVIDER
+   Horizontal separator line
+========================================================= */
+.divider {
+  width: 60%;
+  height: 1px;
+  background: rgba(255, 242, 61, 0.555);
+  margin: 3rem 0;
+}
+
+/* =========================================================
+   FEATURES SECTION
+   Highlight key features with cards
+========================================================= */
+.features {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.feature-card {
+  background-color: #18181d;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 300px;
+  text-align: left;
+  box-shadow: 0 0 10px rgba(255, 241, 61, 0.1);
+  transition: 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(255, 241, 61, 0.3);
+}
+
+.feature-card h3 {
+  color: #fef13d;
+  margin-bottom: 0.5rem;
+}
+
+.feature-card p {
+  opacity: 0.7;
+}
+
+/* =========================================================
+   SHOWCASE SECTION
+   Example keyboard builds
+========================================================= */
+.showcase {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.showcase h2 {
+  color: #fef13d;
+  letter-spacing: 3px;
+  margin-bottom: 2rem;
+}
+
+.showcase-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.showcase-item {
+  background-color: #18181d;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 250px;
+  box-shadow: 0 0 10px rgba(255, 241, 61, 0.1);
+  transition: 0.3s ease;
+}
+
+.showcase-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(255, 242, 61, 0.3);
+}
+
+.showcase-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.showcase-item p {
+  padding: 1rem;
+  opacity: 0.8;
+}

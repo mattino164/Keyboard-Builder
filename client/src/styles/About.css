@@ -1,0 +1,109 @@
+/* ==========================================
+   About Page Styles
+   Handles layout, typography, tech stack, 
+   and hover effects for icons.
+   ========================================== */
+
+/* Container for entire About page */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #0d0d10;
+  border-radius: 10px;
+  min-height: 100vh;
+  padding: 5rem 10%;
+  color: #fff;
+}
+
+/* Page heading */
+.about-heading {
+  font-size: 5rem;
+  font-weight: 600;
+  color: #fef13d;
+  letter-spacing: 10px;
+  margin-bottom: 2rem;
+}
+
+/* Introductory text below heading */
+.intro-text {
+  font-size: 1.5rem;
+  opacity: 0.8;
+  margin-bottom: 4rem;
+  max-width: 700px;
+  text-align: center;
+}
+
+/* Mission section styling */
+.mission-section {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.mission-section h2 {
+  color: #fef13d;
+  margin-bottom: 1rem;
+}
+
+.mission-section p {
+  max-width: 700px;
+  opacity: 0.7;
+}
+
+/* Tech stack section */
+.tech-stack {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.tech-stack h2 {
+  color: #fef13d;
+  margin-bottom: 1.5rem;
+}
+
+/* Container for tech icons */
+.stack-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+/* Base icon styling */
+.icon {
+  font-size: 4rem; /* controls size of icons */
+  transition: transform 0.3s ease, color 0.3s ease;
+  color: #fef13d; /* default yellow accent */
+}
+
+/* Hover effects for icons */
+.icon:hover {
+  transform: scale(1.15);
+  color: #ffffff;
+  filter: drop-shadow(0 0 10px #fef13d);
+}
+
+/* Individual tech colors */
+.react {
+  color: #61dafb;
+}
+
+.node {
+  color: #68a063;
+}
+
+.express {
+  color: #ffffff;
+}
+
+.mongo {
+  color: #47a248;
+}
+
+/* Footer signature */
+.signature {
+  margin-top: 5rem;
+  font-size: 0.9rem;
+  opacity: 0.6;
+}
