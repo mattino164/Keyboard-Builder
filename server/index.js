@@ -19,6 +19,10 @@ app.use(
 // Parse incoming JSON requests
 app.use(express.json());
 
+app.get("/", (req, res) => {
+  res.send("Keyboard Builder API is running!");
+});
+
 // ==============================
 // Routes
 // ==============================
@@ -31,5 +35,5 @@ app.use("/api/parts", partsRouter);
 // ==============================
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
-  console.log(`🚀 Server running on http://localhost:${PORT}`);
+  console.log(`🚀 Server running on port ${PORT}`);
 });
