@@ -20,7 +20,8 @@ export default function BuilderPage() {
   useEffect(() => {
     const fetchParts = async () => {
       try {
-        const { data } = await axios.get("http://localhost:5000/api/parts");
+        const API_URL = process.env.REACT_APP_API_URL;
+        const { data } = await axios.get(`${API_URL}/api/parts`);
         setParts(data);
       } catch (err) {
         console.error("❌ Failed to fetch parts:", err);
