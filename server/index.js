@@ -10,9 +10,23 @@ const app = express();
 // ==============================
 
 // Enable Cross-Origin Resource Sharing (CORS)
+const allowedOrigins = [
+  process.env.CLIENT_URL, // https://keyboard-builder-beta.vercel.app
+  "http://localhost:3000",
+].filter(Boolean);
+
 app.use(
   cors({
-    origin: process.env.CLIENT_URL || "*",
+    origin: (origin, callback) => {
+      if (
+        !origin ||
+        allowedOrigins.includes(origin) ||
+        /^https:\/\/keyboard-builder-[a-z0-9-]+\.vercel\.app$/.test(origin)
+      ) {
+        return callback(null, true);
+      }
+      callback(new Error("Not allowed by CORS"));
+    },
   })
 );
 
