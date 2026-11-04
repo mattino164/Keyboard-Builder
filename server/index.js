@@ -10,7 +10,11 @@ const app = express();
 // ==============================
 
 // Enable Cross-Origin Resource Sharing (CORS)
-app.use(cors());
+app.use(
+  cors({
+    origin: process.env.CLIENT_URL || "*",
+  })
+);
 
 // Parse incoming JSON requests
 app.use(express.json());
