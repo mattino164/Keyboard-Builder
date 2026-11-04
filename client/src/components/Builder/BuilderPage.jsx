@@ -11,6 +11,7 @@ import "../../styles/Builder.css";
 const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5000";
 
 export default function BuilderPage() {
+  console.log("KEYBOARD BUILDER PAGE LOADED");
   // Access global build state and total price
   const { build, setBuild, total } = useContext(BuildContext);
 
