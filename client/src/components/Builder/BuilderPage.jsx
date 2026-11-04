@@ -7,6 +7,9 @@ import PriceSummary from "./PriceSummary";
 import { Spinner } from "../UI";
 import "../../styles/Builder.css";
 
+// API address for local development and deployment
+const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5000";
+
 export default function BuilderPage() {
   // Access global build state and total price
   const { build, setBuild, total } = useContext(BuildContext);
